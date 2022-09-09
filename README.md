@@ -4,5 +4,7 @@ Apetitoso es una app que facilitará el manejo interno de los clientes y órdene
 # Herramientas 🛠️
 # Guia de Instalación 💻
 # Autores 
+- Gabriel Alejandro Diaz Valencia DV201086
+- Brandon Denilson azahar rojas AR172433
 # Licencia 📄
 # Enlaces de interés 👀
