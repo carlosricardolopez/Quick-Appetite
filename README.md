@@ -7,6 +7,7 @@ Apetitoso es una app que facilitará el manejo interno de los clientes y órdene
 - Gabriel Alejandro Diaz Valencia DV201086
 - Brandon Denilson azahar rojas AR172433
 - Joel Alexander Flores Hernandez FH190646
+- Romeo Alejandro Teos Arevalo TA191376
 - Carlos Ricardo López López LL192148
 # Licencia 📄
 # Enlaces de interés 👀
