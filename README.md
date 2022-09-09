@@ -12,3 +12,4 @@ Apetitoso es una app que facilitará el manejo interno de los clientes y órdene
 # Licencia 📄
 # Enlaces de interés 👀
 - [Tablero en Trello] : https://trello.com/invite/b/UxKgEiwG/9758c9d750a044a7f344da89d44223b9/primera-fase-dps
+- [MockUps Aplicacion] : https://app.moqups.com/GK2Iig4NNFsUVIMZb39s9H1khWcfpoSq/view/page/ad64222d5
