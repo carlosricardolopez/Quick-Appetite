@@ -10,6 +10,15 @@ Apetitoso es una app que facilitará el manejo interno de los clientes y órdene
 - Romeo Alejandro Teos Arevalo TA191376
 - Carlos Ricardo López López LL192148
 # Licencia 📄
+Este proyecto esta bajo las licencias de:
+
+•	Reconocimiento - No Comercial (by-nc)
+
+Esta licencia permite la generación de obras derivadas siempre que no se haga un uso comercial de las mismas. Tampoco se puede utilizar la obra original con finalidades comerciales.
+
+•	Reconocimiento - No Comercial - Compartir Igual (by-nc-sa)
+
+Esta licencia no permite un uso comercial de la obra original ni de las posibles obras derivadas. Además, la distribución de estas obras derivadas se debe hacer con una licencia igual a la que regula la obra original.
 # Enlaces de interés 👀
 - [Tablero en Trello] : https://trello.com/invite/b/UxKgEiwG/9758c9d750a044a7f344da89d44223b9/primera-fase-dps
 - [MockUps Aplicacion] : https://app.moqups.com/GK2Iig4NNFsUVIMZb39s9H1khWcfpoSq/view/page/ad64222d5
