@@ -8,6 +8,8 @@ Expo snack
 Firebase
 
 # Guia de Instalación 💻
+en entorno de desarrollo use el "npm install" esto intalara la mayoria de paquetes que estan listados en el "packge.json" los que no se instalen se deberan instalar manualmente 
+
 # Autores 
 - Gabriel Alejandro Diaz Valencia DV201086
 - Brandon Denilson azahar rojas AR172433
