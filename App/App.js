@@ -1,22 +1,61 @@
 import * as React from 'react';
-import { View, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Button} from 'react-native';
 
 {/* Importar componentes de la carpeta components para utilizarlos */}
-import Componente1 from './components/VentanaInicio';
+import Splash from './components/SplashScreen';
+import Home from './components/Inicio';
+import Tipo from './components/TipoOrden';
+import Cart from './components/Menu';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 //
 {/*Creamos constante la cual sera el contenedor de nuestra ventana*/}
-const Ventana1 = ({navigation}) =>  {
+const SplashScreen = ({navigation}) =>  {
   return (
-    <View>
+    <View style={styles.container}>
       {/* Agregamos nuestro componente */}
-      <Componente1/>
+      <Splash/>
       {/* Agregamos boton que nos servira para ir a otra ventana */}
       {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
-      <Button title="Ir a otra Ventana" onPress={() => navigation.navigate("Inicio")}/>
+      <Button title="Enter" onPress={() => navigation.navigate("Inicio")}/>
+    </View>
+  );
+};
+//
+const HomeWindow = ({navigation}) =>  {
+  return (
+    <View style={styles.container}>
+      {/* Agregamos nuestro componente */}
+      <Home/>
+      {/* Agregamos boton que nos servira para ir a otra ventana */}
+      {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
+      <Button title="Continuar" onPress={() => navigation.navigate("Tipopedido")}/>
+    </View>
+  );
+};
+//
+const Orden = ({navigation}) =>  {
+  return (
+    <View style={styles.container}>
+      {/* Agregamos nuestro componente */}
+      <Tipo/>
+      {/* Agregamos boton que nos servira para ir a otra ventana */}
+      {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
+      <Button title="Ir a orden" onPress={() => navigation.navigate("Menu")}/>
+    </View>
+  );
+};
+//
+const Menu = ({navigation}) =>  {
+  return (
+    <View style={styles.container}>
+      {/* Agregamos nuestro componente */}
+      <Cart/>
+      {/* Agregamos boton que nos servira para ir a otra ventana */}
+      {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
+      <Button title="Regresar" onPress={() => navigation.navigate("Inicio")}/>
     </View>
   );
 };
@@ -29,8 +68,10 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
       {/* Aqui agregamos las ventanas que tendra nuestra App */}
-      <Stack.Screen name="Inicio" options={{ title: 'Welcome' }} component={Ventana1}/>
-
+      <Stack.Screen name="Splash"options={{title:'¡Bienvenido!'}} component={SplashScreen}/>
+      <Stack.Screen name="Inicio" options={{ title: 'Inicio' }} component={HomeWindow}/>
+      <Stack.Screen name="Tipopedido" options={{ title: 'Tipo Pedido' }} component={Orden}/>
+      <Stack.Screen name="Menu" options={{ title: 'Menu' }} component={Menu}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -39,4 +80,8 @@ const App = () => {
 export default App;
 
 const styles = StyleSheet.create({
+  container:{
+    width: '100%',
+    height:'100%',
+  },
 });
