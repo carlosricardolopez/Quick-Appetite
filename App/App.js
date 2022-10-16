@@ -6,6 +6,7 @@ import Splash from './components/SplashScreen';
 import Home from './components/Inicio';
 import Tipo from './components/TipoOrden';
 import Cart from './components/Menu';
+import Logins from './components/login';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -19,7 +20,7 @@ const SplashScreen = ({navigation}) =>  {
       <Splash/>
       {/* Agregamos boton que nos servira para ir a otra ventana */}
       {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
-      <Button title="Enter" onPress={() => navigation.navigate("Inicio")}/>
+      <Button title="Enter" onPress={() => navigation.navigate("LoginSC")}/>
     </View>
   );
 };
@@ -59,6 +60,18 @@ const Menu = ({navigation}) =>  {
     </View>
   );
 };
+
+const LoginSC = ({navigation}) =>  {
+  return (
+    <View style={styles.container}>
+      {/* Agregamos nuestro componente */}
+      <Logins/>
+      {/* Agregamos boton que nos servira para ir a otra ventana */}
+      {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
+      <Button title="continuar con la sesion" onPress={() => navigation.navigate("Inicio")}/>
+    </View>
+  );
+};
 //
 
 const Stack = createNativeStackNavigator();
@@ -72,6 +85,7 @@ const App = () => {
       <Stack.Screen name="Inicio" options={{ title: 'Inicio' }} component={HomeWindow}/>
       <Stack.Screen name="Tipopedido" options={{ title: 'Tipo Pedido' }} component={Orden}/>
       <Stack.Screen name="Menu" options={{ title: 'Menu' }} component={Menu}/>
+      <Stack.Screen name="LoginSC" options={{ title: 'Inicar Sesion' }} component={LoginSC}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -85,3 +99,4 @@ const styles = StyleSheet.create({
     height:'100%',
   },
 });
+
