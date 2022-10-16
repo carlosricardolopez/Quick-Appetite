@@ -29,3 +29,4 @@ Esta licencia no permite un uso comercial de la obra original ni de las posibles
 # Enlaces de interés 👀
 - [Tablero en Trello] : https://trello.com/invite/b/UxKgEiwG/9758c9d750a044a7f344da89d44223b9/primera-fase-dps
 - [MockUps Aplicacion] : https://app.moqups.com/GK2Iig4NNFsUVIMZb39s9H1khWcfpoSq/view/page/ad64222d5
+- [Video Funcionamiento App Fase 2] : https://www.youtube.com/watch?v=wpuEbi6FNfA
