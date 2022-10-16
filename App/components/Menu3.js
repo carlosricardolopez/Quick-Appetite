@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
-export default class Cart extends React.Component {
+export default class Cart3 extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
@@ -13,12 +13,24 @@ export default class Cart extends React.Component {
 			cartItemsIsLoading: false,
 			cartItems: [
 
-        //DESAYUNOS
-        	{itemId: "501436370", name: "McMuffin™ de Salchicha y Huevo", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640645692_04_McMuffinSalchichayhuevo_1624549276.png", color: "Precio $5", qty: 1, salePrice: "5", checked: 0},
-				{itemId: "35031871", name: "McMuffin™ de Salchicha Doble y Huevo", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640042550_05_McMuffinSalchichayhuevo%20doble.png", qty: 1, color: "Precio $7", salePrice: "7", checked: 0},
-				{itemId: "801099172", name: "Egg McMuffin™", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640646035_06_EggMuffin_1624549413.png", qty: 1, color: "Precio $6", salePrice: "6", checked: 0},
-				{itemId: "42608079", name: "McMuffin™ Salvadoreño con Salchicha", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1641097753_salv.%20con%20salchicha.jpg", color: "Precio $5", qty: 1, salePrice: "5", checked: 0},
-				{itemId: "247714373", name: "McMuffin™ Huevo y Queso", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640712344_18_McMuffin%20Huevoy%20queso_1624550660.png", qty: 1, color: "Precio $4.99", salePrice: "4.99", checked: 0}
+      
+
+	
+
+        //BEBIDAS
+
+        	{itemId: "501436310", name: "Coca cola", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640812295_Coca%20cola.jpg", color: "Precio $1.50", qty: 1, salePrice: "1.50", checked: 0},
+				{itemId: "35031811", name: "Fanta™", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640812315_Fanta.jpg", qty: 1, color: "Precio $1.50", salePrice: "1.50", checked: 0},
+				{itemId: "80109913", name: "Sprite", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640812335_Sprite.jpg", qty: 1, color: "Precio $1.50", salePrice: "1.50", checked: 0},
+				{itemId: "42608014", name: "Coca Cola Zero", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640812355_Zero.jpg", color: "Precio $1.50", qty: 1, salePrice: "1.50", checked: 0},
+				{itemId: "247714315", name: "Jugo De naranja", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640812399_jugo%20de%20naranja.jpg", qty: 1, color: "Precio $1.50", salePrice: "1.50", checked: 0},
+        	{itemId: "501436316", name: "Agua", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640812488_Agua%20pura.jpg", color: "Precio $1.50", qty: 1, salePrice: "1.50", checked: 0},
+				{itemId: "35031817", name: "Te Caliente", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1646086138_Te%CC%81_12oz.png", qty: 1, color: "Precio $1.50", salePrice: "1.50", checked: 0},
+				{itemId: "801099118", name: "Cafe", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1646085285_Chocolate_8oz.png", qty: 1, color: "Precio $1.50", salePrice: "1.50", checked: 0},
+				{itemId: "42608019", name: "Cafe Con Leche", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1646086105_Cafe%CC%81_8oz.png", color: "Precio $1.50", qty: 1, salePrice: "1.50", checked: 0},
+				{itemId: "247714320", name: "Chocolate", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1646086117_Cafe%CC%81ConLeche_8oz.png", qty: 1, color: "Precio $1.50", salePrice: "1.50", checked: 0}
+
+
 
 			]
 		}

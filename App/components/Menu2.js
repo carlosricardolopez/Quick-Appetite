@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
-export default class Cart extends React.Component {
+export default class Cart2 extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
@@ -13,12 +13,14 @@ export default class Cart extends React.Component {
 			cartItemsIsLoading: false,
 			cartItems: [
 
-        //DESAYUNOS
-        	{itemId: "501436370", name: "McMuffin™ de Salchicha y Huevo", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640645692_04_McMuffinSalchichayhuevo_1624549276.png", color: "Precio $5", qty: 1, salePrice: "5", checked: 0},
-				{itemId: "35031871", name: "McMuffin™ de Salchicha Doble y Huevo", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640042550_05_McMuffinSalchichayhuevo%20doble.png", qty: 1, color: "Precio $7", salePrice: "7", checked: 0},
-				{itemId: "801099172", name: "Egg McMuffin™", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640646035_06_EggMuffin_1624549413.png", qty: 1, color: "Precio $6", salePrice: "6", checked: 0},
-				{itemId: "42608079", name: "McMuffin™ Salvadoreño con Salchicha", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1641097753_salv.%20con%20salchicha.jpg", color: "Precio $5", qty: 1, salePrice: "5", checked: 0},
-				{itemId: "247714373", name: "McMuffin™ Huevo y Queso", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640712344_18_McMuffin%20Huevoy%20queso_1624550660.png", qty: 1, color: "Precio $4.99", salePrice: "4.99", checked: 0}
+       
+
+				// ALMUERZOS
+				{itemId: "501436323", name: "Hamburguesa Ranch", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1641320427_19.Ranch.png", color: "Precio $5", qty: 1, salePrice: "5", checked: 0},
+				{itemId: "35031861", name: "Big Mac™", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640814235_4.Big%20mac.jpg", qty: 1, color: "Precio $7", salePrice: "7", checked: 0},
+				{itemId: "801099131", name: "Hamburguesa Ranch Triple", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1641320494_21.%20Ranch%20triple.jpg", qty: 1, color: "Precio $6", salePrice: "6", checked: 0},
+				{itemId: "42608079", name: "Pico Guacamol Gourmet", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640816072_4.pico%20guacamol.jpg", color: "Precio $5", qty: 1, salePrice: "5", checked: 0},
+				{itemId: "247714372", name: "Pollo McCrispy™ 2 Piezas", thumbnailImage: "https://mcdonalds.com.sv/imagen/menu-products/1640816768_3.pollo%20mccrispy%202%20piezas.jpg", qty: 1, color: "Precio $4.99", salePrice: "4.99", checked: 0}
 
 			]
 		}

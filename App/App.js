@@ -6,6 +6,9 @@ import Splash from './components/SplashScreen';
 import Home from './components/Inicio';
 import Tipo from './components/TipoOrden';
 import Cart from './components/Menu';
+import Cart2 from './components/Menu2';
+import Cart3 from './components/Menu3';
+import Sub from './components/menus';
 import Logins from './components/login';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -44,11 +47,39 @@ const Orden = ({navigation}) =>  {
       <Tipo/>
       {/* Agregamos boton que nos servira para ir a otra ventana */}
       {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
-      <Button title="Ir a orden" onPress={() => navigation.navigate("Menu")}/>
+      <View style={styles.boton1} >
+      <Button title="COMER AQUI" onPress={() => navigation.navigate("menus")}/>
+      </View>
+      <View style={styles.boton2}>
+       <Button title="LLEVAR A CASA" onPress={() => navigation.navigate("menus")}/>
+       </View>
     </View>
   );
 };
-//
+const Menus = ({navigation}) =>  {
+  return (
+    <View style={styles.container}>
+      {/* Agregamos nuestro componente */}
+      <Sub/>
+      {/* Agregamos boton que nos servira para ir a otra ventana */}
+      {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
+      <View style={styles.boton2}>
+      <Button title="DESAYUNOS" onPress={() => navigation.navigate("Desayunos")}/>
+      </View>
+      <View style={styles.boton2}>
+      <Button title="ALMUERZOS" onPress={() => navigation.navigate("Almuerzos")}/>
+      </View>
+      <View style={styles.boton3}>
+      <Button title="BEBIDAS" onPress={() => navigation.navigate("Bebidas")}/>
+      </View>
+    </View>
+  );
+};
+
+
+
+
+
 const Menu = ({navigation}) =>  {
   return (
     <View style={styles.container}>
@@ -56,11 +87,34 @@ const Menu = ({navigation}) =>  {
       <Cart/>
       {/* Agregamos boton que nos servira para ir a otra ventana */}
       {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
-      <Button title="Regresar" onPress={() => navigation.navigate("Inicio")}/>
+      <Button title="Regresar" onPress={() => navigation.navigate("menus")}/>
     </View>
   );
 };
 
+const Menu2 = ({navigation}) =>  {
+  return (
+    <View style={styles.container}>
+      {/* Agregamos nuestro componente */}
+      <Cart2/>
+      {/* Agregamos boton que nos servira para ir a otra ventana */}
+      {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
+      <Button title="Regresar" onPress={() => navigation.navigate("menus")}/>
+    </View>
+  );
+};
+const Menu3 = ({navigation}) =>  {
+  return (
+    <View style={styles.container}>
+      {/* Agregamos nuestro componente */}
+      <Cart3/>
+      {/* Agregamos boton que nos servira para ir a otra ventana */}
+      {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
+      <Button title="Regresar" onPress={() => navigation.navigate("menus")}/>
+    </View>
+  );
+};
+//
 const LoginSC = ({navigation}) =>  {
   return (
     <View style={styles.container}>
@@ -68,11 +122,12 @@ const LoginSC = ({navigation}) =>  {
       <Logins/>
       {/* Agregamos boton que nos servira para ir a otra ventana */}
       {/* le pasamos como argumento el nombre de la ventana a la cual querenmos ir */}
+      <View style={styles.boton1} >
       <Button title="continuar con la sesion" onPress={() => navigation.navigate("Inicio")}/>
+      </View>
     </View>
   );
 };
-//
 
 const Stack = createNativeStackNavigator();
 
@@ -84,8 +139,11 @@ const App = () => {
       <Stack.Screen name="Splash"options={{title:'¡Bienvenido!'}} component={SplashScreen}/>
       <Stack.Screen name="Inicio" options={{ title: 'Inicio' }} component={HomeWindow}/>
       <Stack.Screen name="Tipopedido" options={{ title: 'Tipo Pedido' }} component={Orden}/>
-      <Stack.Screen name="Menu" options={{ title: 'Menu' }} component={Menu}/>
-      <Stack.Screen name="LoginSC" options={{ title: 'Inicar Sesion' }} component={LoginSC}/>
+       <Stack.Screen name="menus" options={{ title: 'menus' }} component={Menus}/>
+      <Stack.Screen name="Desayunos" options={{ title: 'Desayunos' }} component={Menu}/>
+       <Stack.Screen name="Almuerzos" options={{ title: 'Almuerzos' }} component={Menu2}/>
+        <Stack.Screen name="Bebidas" options={{ title: 'Bebidas' }} component={Menu3}/>
+          <Stack.Screen name="LoginSC" options={{ title: 'Inicar Sesion' }} component={LoginSC}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -98,5 +156,26 @@ const styles = StyleSheet.create({
     width: '100%',
     height:'100%',
   },
-});
+  boton1:{
+     alignSelf:'center',
+    paddingVertical:15,
+    marginVertical:130,
+    borderRadius:15,
+    width:'90%'
+  },
 
+  boton2:{
+     alignSelf:'center',
+    paddingVertical:15,
+    marginVertical:100,
+    borderRadius:15,
+    width:'90%'
+  },
+  boton3:{
+     alignSelf:'center',
+    paddingVertical:15,
+    marginVertical:40,
+    borderRadius:15,
+    width:'90%'
+  },
+});

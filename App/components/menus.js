@@ -1,18 +1,21 @@
 import React from 'react';
 import { StyleSheet, ImageBackground} from 'react-native'
-import fondo2 from '../Slider/fondo.jpg';
-function Tipo(){
+import fondos from '../Slider/fondos.png';
+function Sub(){
   return(
-    <ImageBackground source={fondo2} style={styles.fondo}>
+    <ImageBackground source={fondos} style={styles.fondo}>
      
       </ImageBackground>
 );
 }
-export default Tipo;
+export default Sub;
 
 const styles = StyleSheet.create({
   fondo:{
   flex:1,
-  height:705,
+  height:1000,
+  width:-1000,
+  marginLeft:-1000,
+
   },
 });
