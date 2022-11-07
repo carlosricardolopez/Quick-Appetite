@@ -155,9 +155,7 @@ export default class Cart extends React.Component {
 							</View>
 						</View>
 						<View style={{flexDirection: 'row', justifyContent: 'flex-end', height: 32, paddingRight: 20, alignItems: 'center'}}>
-							<TouchableOpacity style={[styles.centerElement, {backgroundColor: '#0faf9a', width: 100, height: 25, borderRadius: 5}]} onPress={() => console.log('test')}>
-								<Text style={{color: '#ffffff'}}>Checkout</Text>
-							</TouchableOpacity>
+							
 						</View>
 					</View>
 				}
